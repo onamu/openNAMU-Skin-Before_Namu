@@ -59,27 +59,20 @@
                         </a>
                     </li>
                 </ul>
-                <div class="combo f_r search-box">
-                    <input type="text" id="searchInput" size="27" placeholder="Search" class="d_form ui-autocomplete-input" tabindex="1" autocomplete="off">
-                    <button type="button" id="searchBtn" class="d_btn">
-                        <span class="icon ion-search"></span>
-                    </button>
-                    <button type="button" id="goBtn" class="d_btn">
-                        <span class="icon ion-arrow-right-c"></span>
-                    </button>
-                </div>
+                <form method="post" action="/search" id="searchform" role="search"></form>
+                    <div class="combo f_r search-box">
+                        <input type="text" id="searchInput" size="27" placeholder="Search" name="search" class="d_form ui-autocomplete-input" tabindex="1" autocomplete="off">
+                        <button type="button" id="searchBtn" class="d_btn">
+                            <span class="icon ion-search"></span>
+                        </button>
+                        <button type="button" id="goBtn" class="d_btn">
+                            <span class="icon ion-arrow-right-c"></span>
+                        </button>
+                    </div>
+                </form>
                 <ul class="f_r">
                     <li><a href="/web/20150729015111/https://namu.wiki/random" title="Random"><span class="icon ion-shuffle"></span></a></li>
                 </ul>
-                <div class="combo small-search-box">
-                    <input autocomplete="off" id="smallSearchInput" placeholder="Search" class="d_form ui-autocomplete-input" type="text" tabindex="1">
-                    <button type="button" id="smallSearchBtn" class="d_btn">
-                        <span class="icon ion-search"></span>
-                    </button>
-                    <button type="button" id="smallGoBtn" class="d_btn">
-                        <span class="icon ion-arrow-right-c"></span>
-                    </button>
-                </div>
             </header>
             <article class="clear ">
                 <ul class="tab_bar type_small doc-menu" data-tab-event="click">
