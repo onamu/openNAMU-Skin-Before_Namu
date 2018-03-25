@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{imp[0]}} - {{imp[1][0]}}</title>
+        <link rel="stylesheet" href="/views/senkawa_memories/css/dough.css">
+        <link rel="stylesheet" href="/views/senkawa_memories/css/dough-mobile.css">
+        <link rel="stylesheet" href="/views/senkawa_memories/css/jquery-ui.min.css">
+        <link rel="stylesheet" href="/views/senkawa_memories/css/layout.css">
+        <link rel="stylesheet" href="/views/senkawa_memories/css/plus.css">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <script src="/views/senkawa_memories/js/dough.js"></script>
+        <script src="/views/senkawa_memories/js/jquery.min.js"></script>
+        <script src="/views/senkawa_memories/js/jquery-ui.min.js"></script>
+        <script src="/views/senkawa_memories/js/layout.js"></script>
+        {{imp[1][5]|safe}}
+        {{imp[2][3]|safe}}
+    </head>
+    <body>
+        <div class="container wiki-main">
+            <header class="nav_top">
+                <h1>
+                    <a href="/" class="wiki-logo">{{imp[1][4]|safe}}</a>
+                </h1>
+                <ul>
+                    <li>
+                        <a href="/recent_changes" title="RecentChanges">
+                            <span class="icon ion-compass"></span>
+                            <span class="icon-title">&nbsp;&nbsp;최근 변경</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/recent_discuss" title="RecentDiscuss">
+                            <span class="icon ion-android-textsms"></span>
+                            <span class="icon-title">&nbsp;&nbsp;최근 토론</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/other" title="Other">
+                            <span class="icon ion-information-circled"></span>
+                            <span class="icon-title">&nbsp;&nbsp;기타</span>
+                        </a>
+                    </li>
+                    </ul>
+                    <ul class="f_r" style="margin-left: 10px;">  
+                    <li>
+                        <a rel="nofollow" id="userIcon" href="/user" title="User">
+                            {% if imp[2][4] != '' %}
+                                <img src="https://www.gravatar.com/avatar/{{imp[2][4]|md5_replace}}?s=30">
+                            {% else %}
+                                {% if imp[2][2] == 1 %}
+                                    <span class="icon ion-person"></span>
+                                {% elif imp[2][2] == 0 %}
+                                    <span class="icon ion-close-round"></span>
+                                {% else %}
+                                    <span class="icon ion-person-stalker"></span>
+                                {% endif %}
+                            {% endif %}
+                        </a>
+                    </li>
+                </ul>
+                <div class="combo f_r search-box">
+                    <input type="text" id="searchInput" size="27" placeholder="Search" class="d_form ui-autocomplete-input" tabindex="1" autocomplete="off">
+                    <button type="button" id="searchBtn" class="d_btn">
+                        <span class="icon ion-search"></span>
+                    </button>
+                    <button type="button" id="goBtn" class="d_btn">
+                        <span class="icon ion-arrow-right-c"></span>
+                    </button>
+                </div>
+                <ul class="f_r">
+                    <li><a href="/web/20150729015111/https://namu.wiki/random" title="Random"><span class="icon ion-shuffle"></span></a></li>
+                </ul>
+                <div class="combo small-search-box">
+                    <input autocomplete="off" id="smallSearchInput" placeholder="Search" class="d_form ui-autocomplete-input" type="text" tabindex="1">
+                    <button type="button" id="smallSearchBtn" class="d_btn">
+                        <span class="icon ion-search"></span>
+                    </button>
+                    <button type="button" id="smallGoBtn" class="d_btn">
+                        <span class="icon ion-arrow-right-c"></span>
+                    </button>
+                </div>
+            </header>
+            <article class="clear ">
+                <ul class="tab_bar type_small doc-menu" data-tab-event="click">
+                    {% if menu != 0 %}
+                        {% for sub_d in menu|reverse %}
+                            <li class="f_r"><a href="/{{sub_d[0]}}">{{sub_d[1]}}</a></li>
+                        {% endfor %}
+                    {% endif %}
+                </ul>
+                <p class="wiki-edit-date">
+                    {% if imp[3][1] != 0 %}
+                        최근 수정 시각 : {{imp[3][1]}}
+                    {% else %}
+                        &nbsp;
+                    {% endif %}    
+                </p>
+                <h1 class="title">
+                    {{imp[0]}}
+                    {% if imp[3][0] != 0 %}
+                        <sub>{{imp[3][0]}}</sub>
+                    {% endif %}
+                </h1>
+                <div class="wiki-content">
+                    {{data|safe}}
+                </div>
+            </article>
+            <footer>
+                <div style="margin-right: 100px;">
+                    {{imp[1][1]|safe}}
+                    <a href="https://github.com/2DU/openNAMU">오픈나무</a>
+                    <a href="/views/senkawa_memories/list.html">기여자</a>
+                </div>
+            </footer>
+            <ul class="nav-controls">
+                <li>
+                    <a href="#top" class="go-top-btn">
+                        <span class="ion-arrow-up-b"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#bottom" class="go-bottom-btn">
+                        <span class="ion-arrow-down-b"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
