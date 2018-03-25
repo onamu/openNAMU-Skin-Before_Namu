@@ -75,13 +75,13 @@
                 </ul>
             </header>
             <article class="clear ">
-                <ul class="tab_bar type_small doc-menu" data-tab-event="click">
-                    {% if menu != 0 %}
+                {% if menu != 0 %}
+                    <ul class="tab_bar type_small doc-menu" data-tab-event="click">
                         {% for sub_d in menu|reverse %}
                             <li class="f_r"><a href="/{{sub_d[0]}}">{{sub_d[1]}}</a></li>
                         {% endfor %}
-                    {% endif %}
-                </ul>
+                    </ul>
+                {% endif %}
                 <p class="wiki-edit-date">
                     {% if imp[3][1] != 0 %}
                         최근 수정 시각 : {{imp[3][1]}}
