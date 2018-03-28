@@ -87,6 +87,7 @@ button#save {
     color: #fff;
     background-color: #0275d8;
     border: 1px solid #0275d8;
+    margin-right: 5px;
 }
 
 button#save:hover {
