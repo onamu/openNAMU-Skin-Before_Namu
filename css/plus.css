@@ -189,3 +189,7 @@ hr {
 ul.tab_bar.type_small.doc-menu {
     list-style: none;
 }
+
+img {
+    max-width: 100%;
+}
