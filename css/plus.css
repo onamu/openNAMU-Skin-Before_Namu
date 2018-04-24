@@ -193,3 +193,7 @@ ul.tab_bar.type_small.doc-menu {
 img {
     max-width: 100%;
 }
+
+td#toron_color_blue {
+    background: skyblue;
+}
