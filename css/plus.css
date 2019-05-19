@@ -181,11 +181,6 @@ input#searchInput {
     width: auto;
 }
 
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 ul.tab_bar.type_small.doc-menu {
     list-style: none;
 }
