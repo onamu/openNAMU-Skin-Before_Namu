@@ -177,7 +177,7 @@ select {
     border-radius: 3px;
 }
 
-input#searchInput {
+#smallSearchInput {
     width: auto;
 }
 
@@ -191,4 +191,23 @@ img {
 
 td#toron_color_blue {
     background: skyblue;
+}
+
+@media screen and (max-width: 700px) {
+    .wiki-main .nav_top .search-box {
+        margin: 0 -1em;
+        width: calc(100% + 2em);
+    }
+
+    #smallSearchInput {
+        width: 80%;
+    }
+
+    #smallSearchBtn {
+        width: 10%;
+    }
+
+    #smallGoBtn {
+        width: 10%;
+    }
 }

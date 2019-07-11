@@ -13,7 +13,6 @@
         <script src="/views/before_namu/js/jquery.min.js"></script>
         <script src="/views/before_namu/js/jquery-ui.min.js"></script>
         <script src="/views/before_namu/js/dough.js"></script>
-        <script src="/views/before_namu/js/layout.js"></script>
         <script src="/views/before_namu/js/skin_set.js"></script>
         {{imp[1][5]|safe}}
         {{imp[2][3]|safe}}
@@ -50,8 +49,11 @@
                             <span class="icon-title">&nbsp;&nbsp;{{'skin_setting'|load_lang}}</span>
                         </a>
                     </li>
-                    </ul>
-                    <ul class="f_r" style="margin-left: 10px;">  
+                    <li>
+                        <a href="/random" title="Random">
+                            <span class="icon ion-shuffle"></span>
+                        </a>
+                    </li>
                     <li>
                         <a rel="nofollow" id="userIcon" href="/user" title="User">
                             {% if imp[2][4] != '' %}
@@ -68,20 +70,17 @@
                         </a>
                     </li>
                 </ul>
-                <form method="post" action="/search" id="searchform" role="search"></form>
+                <form method="post" action="/goto" id="searchform" role="search">
                     <div class="combo f_r search-box">
-                        <input type="text" id="searchInput" size="27" placeholder="{{'search'|load_lang}}" name="search" class="d_form ui-autocomplete-input" tabindex="1" autocomplete="off">
-                        <button type="button" id="searchBtn" class="d_btn">
+                        <input type="search" id="smallSearchInput" size="27" placeholder="{{'search'|load_lang}}" name="search" class="d_form ui-autocomplete-input" tabindex="1" autocomplete="off">
+                        <button type="submit" id="smallSearchBtn" class="d_btn" formaction="/search">
                             <span class="icon ion-search"></span>
                         </button>
-                        <button type="button" id="goBtn" class="d_btn">
+                        <button type="submit" id="smallGoBtn" class="d_btn" formaction="/goto">
                             <span class="icon ion-arrow-right-c"></span>
                         </button>
                     </div>
                 </form>
-                <ul class="f_r">
-                    <li><a href="/random" title="Random"><span class="icon ion-shuffle"></span></a></li>
-                </ul>
             </header>
             <article class="clear ">
                 {% if menu != 0 %}
