@@ -211,3 +211,17 @@ td#toron_color_blue {
         width: 10%;
     }
 }
+
+blockquote {
+    padding: 1em calc(2em + 25px) 1em 1em;
+    margin: 1em 0em 0em;
+    background: #eeeeee;
+    display: block;
+    border: 2px dashed #ccc;
+    border-left: 5px solid #3d414d;
+    font-size: 14px;
+    background-image: url(/views/acme/img/quote.png);
+    background-position: calc(100% - 10px) 10px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
