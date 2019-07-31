@@ -225,3 +225,7 @@ blockquote {
     background-repeat: no-repeat;
     background-size: 25px;
 }
+
+#bottom { 
+    margin-right: 100px;
+}
