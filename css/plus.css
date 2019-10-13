@@ -147,8 +147,11 @@ article h6 {
 }
 
 #cate {
-    border: 1px solid #aaa;
-    padding: 5px;
+    border: 1px solid #ccc;
+    padding: 3px 3px 3px 5px;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    font-size: .9rem;
 }
 
 #topic_top_title {
@@ -227,4 +230,17 @@ blockquote {
 
 #bottom { 
     margin-right: 100px;
+}
+
+#topic_color {
+    background-color: #bbeabb;
+}
+
+div#redirect {
+    padding: .5rem .8rem;
+    border-radius: .25rem;
+    font-size: .9rem;
+    color: #31708f;
+    background-color: #d9edf7;
+    border: 1px solid #bcdff1;
 }
