@@ -228,3 +228,11 @@ div#redirect {
     background-color: #d9edf7;
     border: 1px solid #bcdff1;
 }
+
+#topic_color {
+    background-color: #bbeabb;
+}
+
+a.wiki-logo {
+    text-align: center;
+}
