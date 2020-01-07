@@ -212,7 +212,7 @@ blockquote {
     background-size: 25px;
 }
 
-#bottom { 
+#bottom {
     margin-right: 100px;
 }
 
@@ -231,4 +231,9 @@ div#redirect {
 
 a.wiki-logo {
     text-align: center;
+}
+
+.wiki-main .wiki-edit-date {
+    width: 100%;
+    display: inline-block;
 }

@@ -101,7 +101,7 @@ window.onload = function () {
 
         document.getElementById("dec_title").innerHTML = '<h1>' + set_language[language]['skin_setting'] + '</h1>';
         document.title = document.title.replace(/.*(\- .*)$/, set_language[language]['skin_setting'] + " $1");
-        
+
         data = document.getElementById("dec_con");
         set_data = {};
 
@@ -160,7 +160,7 @@ window.onload = function () {
                 <option value="delete">' + set_language[language]['delete'] + '</option> \
             ';
         }
-        
+
         if(
             cookies.match(regex_data('include_link')) &&
             cookies.match(regex_data('include_link'))[1] === 'true'

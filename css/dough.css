@@ -9,8 +9,8 @@ Webstandards Tech team.
 
 @charset "UTF-8";
 
-/* 
-** reset 
+/*
+** reset
 */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
 fieldset,img{border:0 none}
@@ -40,8 +40,8 @@ h6 {font-size:1em;}
 h1 img {margin:0;vertical-align:middle;}
 
 
-/* 
-** global class 
+/*
+** global class
 */
 
 #daumIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0;} /* 스킵네비게이션 */
@@ -63,7 +63,7 @@ h1 img {margin:0;vertical-align:middle;}
 
 
 /*
-** Layout style 
+** Layout style
 */
 .d_page {position:relative;width:978px;min-width:978px;margin:0 1.5em;clear:both;}
 .d_page:after {display:block;height:0;content:".";font-size:0;visibility:hidden;clear:both;}
@@ -76,8 +76,8 @@ h1 img {margin:0;vertical-align:middle;}
 .type_footer {margin-top:2em;padding:3em 1em 4em;border-top:1px solid #bbb;text-align:center;color:#777;}
 
 
-/* 
-** grid 
+/*
+** grid
 */
 
 .grid_5 {width:5%;}
@@ -101,8 +101,8 @@ h1 img {margin:0;vertical-align:middle;}
 .grid_95 {width:95%;}
 
 
-/* 
-** list 
+/*
+** list
 */
 
 .d_list {margin:1em 0 1.5em 2em;}
@@ -132,8 +132,8 @@ ol.d_list > li {list-style:decimal;}
 .d_list.type_border > li:last-child {border-bottom:none;}
 
 
-/* 
-** button 
+/*
+** button
 */
 
 .d_btn {
@@ -309,14 +309,14 @@ ol.d_list > li {list-style:decimal;}
 /* btn - block */
 .d_btn.type_block {display:block;text-align:center;}
 
-/* 
-** Form 
+/*
+** Form
 */
-input.d_form, textarea.d_form, select.d_form {margin:0.5em 0;} 
-input[type="text"].d_form, 
-input[type="search"].d_form, 
-input[type="password"].d_form, 
-textarea.d_form, 
+input.d_form, textarea.d_form, select.d_form {margin:0.5em 0;}
+input[type="text"].d_form,
+input[type="search"].d_form,
+input[type="password"].d_form,
+textarea.d_form,
 select.d_form {padding:0.5em;border:1px solid #ccc;border-color:#dbdbdb #d2d2d2 #d0d0d0 #d2d2d3;box-shadow:inset 0.1em 0.1em 0.15em rgba(0,0,0,0.1);vertical-align:middle;line-height:1.25em;outline:none;}
 select.d_form {min-width:100px;height:2.45em;padding:0.45em 0.5em;box-shadow:none;line-height:2.45em;}
 input[type="text"].d_form, input[type="search"].d_form, input[type="password"].d_form {height:1.25em;}
@@ -324,7 +324,7 @@ input[type="text"].d_form:focus, input[type="search"].d_form:focus, input[type="
 
 /* label */
 label {margin:0 0.75em 0 0;}
-label > input[type="text"].d_form, 
+label > input[type="text"].d_form,
 label > input[type="password"].d_form,
 label > input[type="search"].d_form,
 label > input[type="radio"].d_form,
@@ -343,13 +343,13 @@ label > select.d_form {margin:0.5em;}
 label + .combo {margin-left:1em;vertical-align:middle;}
 
 
-/* 
-** Table 
+/*
+** Table
 */
 
 table.d_table {table-layout:fixed;width:100%;margin:1em 0 1.5em;border:1px solid #e2e2e2;border-width:1px 0 0 1px;border-spacing:0px; border-collapse:collapse;}
 table.d_table caption {font-weight:bold;margin:0 0 1em;text-align:left;}
-table.d_table th, 
+table.d_table th,
 table.d_table td {padding:0.5em 0.75em;border:1px solid #e2e2e2;border-width:0 1px 1px 0;text-align:left;}
 table.d_table th {background:#f7f7f7;}
 
@@ -367,12 +367,12 @@ table.d_table th {background:#f7f7f7;}
 */
 
 /*
-** navigation 
+** navigation
 */
 
-[class^="nav_"] a:hover, 
+[class^="nav_"] a:hover,
 [class*=" nav_"] a:hover,
-[class^="tab_"] a:hover, 
+[class^="tab_"] a:hover,
 [class*=" tab_"] a:hover {text-decoration:none;}
 
 .nav_top:after,
@@ -432,7 +432,7 @@ table.d_table th {background:#f7f7f7;}
 
 
 /*
-** tab 
+** tab
 */
 
 /* tab_bar */
@@ -458,8 +458,8 @@ table.d_table th {background:#f7f7f7;}
 .tab_bar.type_small > li.on > a:hover {color:#222}
 
 
-/* 
-** thumbnail and caption 
+/*
+** thumbnail and caption
 */
 .group_thumb {overflow:hidden;margin:1em 0 1.5em;}
 .group_thumb li {overflow:hidden;float:left;padding:1%;margin:0;}
@@ -483,8 +483,8 @@ table.d_table th {background:#f7f7f7;}
 .group_thumb.type_letterbox li > a:hover .caption {text-decoration:none;}
 
 
-/* 
-** panel 
+/*
+** panel
 */
 
 .panel {border:1px solid #d1d1d1;padding:1.5em;margin:1em 0 1.5em;background:#f6f6f6;border-radius:0.4em;box-shadow:inset 0 1px 2px rgba(255,255,255,0.6), inset 0 -1px 1px rgba(0,0,0,0.2);}
@@ -500,7 +500,7 @@ table.d_table th {background:#f7f7f7;}
 
 
 /*
-** popup 
+** popup
 */
 
 .window {margin:2em;width:90%;max-width:700px;background:#fff;border:1px solid #666;box-shadow:0.1em 0.1em 0.8em rgba(0,0,0,0.5);}
@@ -509,14 +509,14 @@ table.d_table th {background:#f7f7f7;}
 .window_foot {padding:1em 1em 2em;text-align:center}
 
 
-/* 
-** etc 
+/*
+** etc
 */
 .line_break {display:block;margin:2em 0;border-bottom:1px solid #bbb;}
 
 
-/* 
-** Paging 
+/*
+** Paging
 */
 
 .group_paging {display:block;margin:1em 0 1.5em;text-align:center;}

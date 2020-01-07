@@ -3,7 +3,7 @@
 	
 	/*
 	 * $.tab
-	 * 
+	 *
 	 *  - "data-tab-event" 속성을 가진 .tab_bar 엘리먼트를 대상으로 적용된다.
 	 *  - event는 "click"과 "mouseover" 두가지를 지원한다.
 	 */
@@ -29,12 +29,12 @@
 					};
 					
 					switch(_tab._eventTrigger){
-						case "click": 
+						case "click":
 							$(this).click(function(e){
 								eventHandler(e);
 							});
 							break;
-						case "mouseover": 
+						case "mouseover":
 							$(this).mouseover(function(e){
 								eventHandler(e);
 							});
@@ -55,7 +55,7 @@
 	
 	/*
 	 * $.tip (툴팁 이벤트)
-	 * 
+	 *
 	 *  - "data-tip-event"과 title 속성을 가진 모든 엘리먼트에 적용된다.
 	 *  - event는 "click"과 "mouseover" 두가지를 지원한다.
 	 *  - options : css | trigger
@@ -109,7 +109,7 @@
 			};
 			
 			switch(this._eventTrigger){
-				case "mouseover": 
+				case "mouseover":
 					$(this).mouseover(function(e){
 						this.eventOnHandler(e);
 					});
@@ -117,7 +117,7 @@
 						this.eventOffHandler(e);
 					});
 					break;
-				case "focus": 
+				case "focus":
 					$(this).focus(function(e){
 						this.eventOnHandler(e);
 					});
@@ -134,7 +134,7 @@
 	/*
 	 * $.pop (팝업이벤트)
 	 * 셀렉트된 요소를 css3 transition 애니메이션으로 팝업시킨다.
-	 * options - css | callback 
+	 * options - css | callback
 	 */
 	$.fn.pop = function(options){
 		var _options = {
@@ -226,7 +226,7 @@
 	};
 
 	/*
-	 * $.initResponsibleNav 
+	 * $.initResponsibleNav
 	 * 반응형 CSS 모듈 적용했을 시 작동하는 스크립트입니다.
 	 * 화면사이즈가 작아졌을 때 모바일에 적합하게 변경시켜줍니다.
 	 */
