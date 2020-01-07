@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="/views/before_namu/css/dough-mobile.css?ver=1">
         <link rel="stylesheet" href="/views/before_namu/css/jquery-ui.min.css?ver=1">
         <link rel="stylesheet" href="/views/before_namu/css/layout.css?ver=1">
-        <link rel="stylesheet" href="/views/before_namu/css/plus.css?ver=2">
+        <link rel="stylesheet" href="/views/before_namu/css/plus.css?ver=3">
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <script src="/views/before_namu/js/jquery.min.js?ver=1"></script>
         <script src="/views/before_namu/js/jquery-ui.min.js?ver=1"></script>
@@ -95,21 +95,25 @@
                         {% endfor %}
                     </ul>
                 {% endif %}
-                <p class="wiki-edit-date">
-                    {% if imp[3][1] != 0 %}
-                        {{'last_edit_time'|load_lang}} : {{imp[3][1]}}
-                    {% else %}
-                        &nbsp;
-                    {% endif %}
-                </p>
-                <span id="dec_title">
-                    <h1 class="title">
-                        {{imp[0]}}
-                        {% if imp[3][0] != 0 %}
-                            <sub>{{imp[3][0]}}</sub>
-                        {% endif %}
-                    </h1>
-                </span>
+                <div class="wiki-content-top">
+                    <div id="safe-date">
+                        <p class="wiki-edit-date">
+                            {% if imp[3][1] != 0 %}
+                                {{'last_edit_time'|load_lang}} : {{imp[3][1]}}
+                            {% else %}
+                                &nbsp;
+                            {% endif %}
+                        </p>
+                    </div>
+                    <span id="dec_title">
+                        <h1 class="title">
+                            <span class="change_space">{{imp[0]}}</span>
+                            {% if imp[3][0] != 0 %}
+                                <sub>{{imp[3][0]}}</sub>
+                            {% endif %}
+                        </h1>
+                    </span>
+                </div>
                 <div class="wiki-content" id="dec_con">
                     {{data|safe}}
                 </div>

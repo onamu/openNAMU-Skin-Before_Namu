@@ -233,7 +233,10 @@ a.wiki-logo {
     text-align: center;
 }
 
+#safe-date {
+    float: right;
+}
+
 .wiki-main .wiki-edit-date {
-    width: 100%;
     display: inline-block;
 }
