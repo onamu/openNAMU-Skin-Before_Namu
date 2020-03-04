@@ -186,6 +186,10 @@ img {
         width: calc(100% + 2em);
     }
 
+    span#dec_title {
+        display: inline-block;
+    }
+
     #smallSearchInput {
         width: 80%;
     }
