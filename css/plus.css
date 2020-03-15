@@ -244,3 +244,7 @@ a.wiki-logo {
 .wiki-main .wiki-edit-date {
     display: inline-block;
 }
+
+th, td, input, select, textarea, button {
+    color: inherit;
+}
