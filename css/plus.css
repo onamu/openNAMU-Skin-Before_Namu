@@ -6,6 +6,7 @@ table {
 td {
     padding: 5px 10px;
     border: 1px solid #dddddd;
+    color: inherit;
 }
 
 #toc {
@@ -243,8 +244,4 @@ a.wiki-logo {
 
 .wiki-main .wiki-edit-date {
     display: inline-block;
-}
-
-th, td, input, select, textarea, button {
-    color: inherit;
 }
