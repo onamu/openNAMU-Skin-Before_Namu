@@ -4,11 +4,10 @@
         <meta charset="utf-8">
         <title>{{imp[0]}} - {{imp[1][0]}}</title>
         {{imp[3][3]|safe}}
-        <link rel="stylesheet" href="/views/before_namu/css/dough.css?ver=1">
-        <link rel="stylesheet" href="/views/before_namu/css/dough-mobile.css?ver=1">
+        <link rel="stylesheet" href="/views/before_namu/css/dough.css?ver=2">
         <link rel="stylesheet" href="/views/before_namu/css/jquery-ui.min.css?ver=1">
-        <link rel="stylesheet" href="/views/before_namu/css/layout.css?ver=1">
-        <link rel="stylesheet" href="/views/before_namu/css/plus.css?ver=5">
+        <link rel="stylesheet" href="/views/before_namu/css/layout.css?ver=2">
+        <link rel="stylesheet" href="/views/before_namu/css/plus.css?ver=6">
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <script src="/views/before_namu/js/jquery.min.js?ver=1"></script>
         <script src="/views/before_namu/js/jquery-ui.min.js?ver=1"></script>
@@ -47,11 +46,8 @@
                             <span class="icon ion-settings"></span>
                         </a>
                     </li>
-                    <li>
-                        <a href="/random" title="Random">
-                            <span class="icon ion-shuffle"></span>
-                        </a>
-                    </li>
+                </ul>
+                <ul class="f_r" style="margin-left: 10px;">
                     <li>
                         <a rel="nofollow" id="userIcon" href="/user" title="User">
                             {% if imp[2][4] != '' %}
@@ -70,19 +66,31 @@
                         </a>
                     </li>
                 </ul>
-                <form method="post" action="/goto" id="searchform" role="search">
+                <form method="post" action="/goto" role="search">
                     <div class="combo f_r search-box">
-                        <input type="search" id="smallSearchInput" size="27" placeholder="{{'search'|load_lang}}" name="search" class="d_form ui-autocomplete-input" tabindex="1" autocomplete="off">
-                        <button type="submit" id="smallGoBtn" class="d_btn" formaction="/goto">
-                            <span class="icon ion-arrow-right-c"></span>
-                        </button>
-                        <button type="submit" id="smallSearchBtn" class="d_btn" formaction="/search">
+                        <input type="text" id="searchInput" size="27" placeholder="Search" name="search" class="d_form ui-autocomplete-input" tabindex="1" autocomplete="off">
+                        <button type="submit" id="searchBtn" class="d_btn" formaction="/search">
                             <span class="icon ion-search"></span>
+                        </button>
+                        <button type="submit" id="goBtn" class="d_btn" formaction="/goto">
+                            <span class="icon ion-arrow-right-c"></span>
                         </button>
                     </div>
                 </form>
+                <ul class="f_r">
+                    <li><a href="/random" title="Random"><span class="icon ion-shuffle"></span></a></li>
+                </ul>
+                <div class="combo small-search-box">
+                    <input autocomplete="off" id="smallSearchInput" placeholder="Search" name="search" class="d_form ui-autocomplete-input" type="text" tabindex="1">
+                    <button type="button" id="smallSearchBtn" class="d_btn">
+                        <span class="icon ion-search"></span>
+                    </button>
+                    <button type="button" id="smallGoBtn" class="d_btn">
+                        <span class="icon ion-arrow-right-c"></span>
+                    </button>
+                </div>
             </header>
-            <article class="clear ">
+            <article class="clear">
                 {% if menu != 0 %}
                     <ul class="tab_bar type_small doc-menu" data-tab-event="click">
                         {% for sub_d in menu|reverse %}
@@ -94,16 +102,14 @@
                         {% endfor %}
                     </ul>
                 {% endif %}
+                <p class="wiki-edit-date">
+                    {% if imp[3][1] != 0 %}
+                        {{'last_edit_time'|load_lang}} : {{imp[3][1]}}
+                    {% else %}
+                        &nbsp;
+                    {% endif %}
+                </p>
                 <div class="wiki-content-top">
-                    <div id="safe-date">
-                        <p class="wiki-edit-date">
-                            {% if imp[3][1] != 0 %}
-                                {{'last_edit_time'|load_lang}} : {{imp[3][1]}}
-                            {% else %}
-                                &nbsp;
-                            {% endif %}
-                        </p>
-                    </div>
                     <span id="dec_title">
                         <h1 class="title">
                             <span class="change_space">{{imp[0]}}</span>

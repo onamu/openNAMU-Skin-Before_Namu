@@ -169,38 +169,13 @@ select {
     border-radius: 3px;
 }
 
-#smallSearchInput {
-    width: auto;
-}
-
-ul.tab_bar.type_small.doc-menu {
-    list-style: none;
-}
-
 img {
     max-width: 100%;
 }
 
 @media screen and (max-width: 700px) {
-    .wiki-main .nav_top .search-box {
-        margin: 0 -1em;
-        width: calc(100% + 2em);
-    }
-
     span#dec_title {
         display: inline-block;
-    }
-
-    #smallSearchInput {
-        width: 80%;
-    }
-
-    #smallSearchBtn {
-        width: 10%;
-    }
-
-    #smallGoBtn {
-        width: 10%;
     }
 }
 
@@ -231,17 +206,25 @@ div#redirect {
 }
 
 #topic_color {
-    background-color: #bbeabb;
+    color: blue;
+}
+
+#topic_color:hover {
+    color: #3377e4;
 }
 
 a.wiki-logo {
     text-align: center;
 }
 
-#safe-date {
-    float: right;
+ul.tab_bar.type_small.doc-menu {
+    list-style: none;
 }
 
-.wiki-main .wiki-edit-date {
-    display: inline-block;
+input#searchInput {
+    width: calc(100% - 70px);
+}
+
+input#smallSearchInput {
+    width: calc(100% - 110px);
 }
