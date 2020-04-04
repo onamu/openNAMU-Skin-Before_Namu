@@ -69,6 +69,7 @@
                 <form method="post" action="/goto" role="search">
                     <div class="combo f_r search-box">
                         <input type="text" id="searchInput" size="27" placeholder="Search" name="search" class="d_form ui-autocomplete-input" tabindex="1" autocomplete="off">
+                        <button type="submit" formaction="/goto" style="display: none;"></button>
                         <button type="submit" id="searchBtn" class="d_btn" formaction="/search">
                             <span class="icon ion-search"></span>
                         </button>
@@ -80,15 +81,18 @@
                 <ul class="f_r">
                     <li><a href="/random" title="Random"><span class="icon ion-shuffle"></span></a></li>
                 </ul>
-                <div class="combo small-search-box">
-                    <input autocomplete="off" id="smallSearchInput" placeholder="Search" name="search" class="d_form ui-autocomplete-input" type="text" tabindex="1">
-                    <button type="button" id="smallSearchBtn" class="d_btn">
-                        <span class="icon ion-search"></span>
-                    </button>
-                    <button type="button" id="smallGoBtn" class="d_btn">
-                        <span class="icon ion-arrow-right-c"></span>
-                    </button>
-                </div>
+                <form method="post" action="/goto" role="search">
+                    <div class="combo small-search-box">
+                        <input autocomplete="off" id="smallSearchInput" placeholder="Search" name="search" class="d_form ui-autocomplete-input" type="text" tabindex="1">
+                        <button type="submit" formaction="/goto" style="display: none;"></button>
+                        <button type="submit" id="smallSearchBtn" class="d_btn" formaction="/search">
+                            <span class="icon ion-search"></span>
+                        </button>
+                        <button type="submit" id="smallGoBtn" class="d_btn" formaction="/goto">
+                            <span class="icon ion-arrow-right-c"></span>
+                        </button>
+                    </div>
+                </form>
             </header>
             <article class="clear">
                 {% if menu != 0 %}
