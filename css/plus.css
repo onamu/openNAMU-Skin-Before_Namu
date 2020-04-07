@@ -228,3 +228,11 @@ input#searchInput {
 input#smallSearchInput {
     width: calc(100% - 110px);
 }
+
+#safe-date {
+    float: right;
+}
+
+.wiki-main .wiki-edit-date {
+    display: inline-block;
+}
