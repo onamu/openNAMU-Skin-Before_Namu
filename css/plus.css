@@ -236,3 +236,16 @@ input#smallSearchInput {
 .wiki-main .wiki-edit-date {
     display: inline-block;
 }
+
+.nav_top #logo_name{
+    float: left;
+    margin: -1px 0 0 0;
+    padding: 0px 10px 0px 0px;
+    line-height: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav_top #logo_name a {
+    color:#fff;
+}
