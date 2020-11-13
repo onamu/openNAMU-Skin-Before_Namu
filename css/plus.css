@@ -22,29 +22,6 @@ td {
     font-size: 18px;
 }
 
-#open {
-    color: yellow;
-}
-
-#not_thing {
-    color: #bf4c4c;
-}
-
-#inside {
-    color: #008000;
-}
-
-#out_link {
-    color: #008000;
-}
-
-#out_link::before {
-    padding: 0px;
-    background: green;
-    color: white;
-    content: "外";
-}
-
 article input, article textarea {
     width: 98%;
     padding: .5rem .75rem;
@@ -147,20 +124,8 @@ article h6 {
     padding-bottom: 0px;
 }
 
-#cate {
-    border: 1px solid #ccc;
-    padding: 3px 3px 3px 5px;
-    margin-bottom: 1em;
-    border-radius: 4px;
-    font-size: .9rem;
-}
-
 #topic_top_title {
     margin-bottom: 10px;
-}
-
-#toron {
-    width: 100%;
 }
 
 select {
@@ -169,27 +134,10 @@ select {
     border-radius: 3px;
 }
 
-img {
-    max-width: 100%;
-}
-
 @media screen and (max-width: 700px) {
     span#dec_title {
         display: inline-block;
     }
-}
-
-blockquote {
-    padding: 1em calc(2em + 25px) 1em 1em;
-    margin: 1em 0em 0em;
-    background: #eeeeee;
-    border: 2px dashed #ccc;
-    border-left: 5px solid #3d414d;
-    font-size: 14px;
-    background-image: url(/views/acme/img/quote.png);
-    background-position: calc(100% - 10px) 10px;
-    background-repeat: no-repeat;
-    background-size: 25px;
 }
 
 #bottom {
@@ -203,14 +151,6 @@ div#redirect {
     color: #31708f;
     background-color: #d9edf7;
     border: 1px solid #bcdff1;
-}
-
-#topic_color {
-    color: blue;
-}
-
-#topic_color:hover {
-    color: #3377e4;
 }
 
 a.wiki-logo {
@@ -248,4 +188,16 @@ input#smallSearchInput {
 
 .nav_top #logo_name a {
     color:#fff;
+}
+
+blockquote {
+    padding: 1em calc(2em + 25px) 1em 1em;
+    margin: 1em 0em 0em;
+    background: #eeeeee;
+    border: 2px dashed #ccc;
+    border-left: 5px solid #71bc6d;
+}
+
+#out_link::before {
+    content: "外";
 }
