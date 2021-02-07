@@ -47,7 +47,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="f_r" style="margin-left: 10px;">
+                <ul class="f_r" id="margin_plus">
                     <li>
                         <a rel="nofollow" id="userIcon" href="/user" title="User">
                             {% if imp[2][4] != '' %}
@@ -99,9 +99,9 @@
                     <ul class="tab_bar type_small doc-menu" data-tab-event="click">
                         {% for sub_d in menu|reverse %}
                             {% if sub_d|length > 2 and sub_d[2] == 1 %}
-                                <li class="f_r"><a href="/{{sub_d[0]}}" id="topic_color">{{sub_d[1]}}</a></li>
+                                <li class="f_r"><a id="menu_link" href="/{{sub_d[0]}}" id="topic_color">{{sub_d[1]}}</a></li>
                             {% else %}
-                                <li class="f_r"><a href="/{{sub_d[0]}}">{{sub_d[1]}}</a></li>
+                                <li class="f_r"><a id="menu_link" href="/{{sub_d[0]}}">{{sub_d[1]}}</a></li>
                             {% endif %}
                         {% endfor %}
                     </ul>
